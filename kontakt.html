@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — BRUKER | Bielsko-Biała 530 693 161</title>
+  <meta name="description" content="Skontaktuj się z BRUKER — zadzwoń 530 693 161 lub napisz. Czynni codziennie 7:00–18:00. Darmowa wycena. Bielsko-Biała i okolice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.jpg" alt="BRUKER logo" height="48">
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+      <a href="tel:+48530693161" class="navbar__phone"><i class="fa-solid fa-phone"></i> 530 693 161</a>
+      <a href="kontakt.html" class="btn btn-green navbar__cta">Darmowa wycena</a>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Napisz lub zadzwoń</span>
+      <h1 class="page-hero__title">Kontakt</h1>
+      <p class="page-hero__sub">Bezpłatna wycena — tego samego dnia. Czynni codziennie 7:00–18:00.</p>
+    </div>
+  </div>
+
+  <section class="contact section" id="kontakt">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__form-wrap" data-aos="fade-right">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Numer telefonu</label>
+              <input type="tel" id="phone" name="phone" placeholder="530 693 161" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" rows="5" placeholder="Opisz co chcesz wyczyścić, podaj orientacyjną powierzchnię…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary contact__submit">
+              <i class="fa-solid fa-paper-plane"></i> Wyślij zapytanie
+            </button>
+            <p class="contact__success" id="formSuccess">✅ Dziękujemy! Odezwiemy się w ciągu 24h.</p>
+          </form>
+        </div>
+
+        <div class="contact__info" data-aos="fade-left">
+          <div class="contact__info-card">
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="contact__info-label">Telefon</span>
+                <a href="tel:+48530693161" class="contact__info-value">530 693 161</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <span class="contact__info-label">Godziny kontaktu</span>
+                <span class="contact__info-value">Codziennie 7:00–18:00</span>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact__info-label">E-mail</span>
+                <a href="mailto:kontakt@bruker.pl" class="contact__info-value">kontakt@bruker.pl</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact__info-label">Obszar działania</span>
+                <span class="contact__info-value">Bielsko-Biała i 50 km (dojazd gratis)</span>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-car"></i></div>
+              <div>
+                <span class="contact__info-label">Obsługiwane miejscowości</span>
+                <span class="contact__info-value">Cieszyn · Ustroń · Trójwieś · Biała i okolice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__map" data-aos="fade-up">
+        <iframe
+          src="https://maps.google.com/maps?q=49.835199,19.026989&hl=pl&z=14&output=embed"
+          width="100%"
+          height="380"
+          style="border:0; border-radius:12px; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokalizacja BRUKER — Bielsko-Biała">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo.jpg" alt="BRUKER" class="footer__logo">
+        <p class="footer__tagline">„BRUKER myje, sąsiad z zazdrości gnije"</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Usługi</h4>
+        <ul>
+          <li><a href="uslugi.html">Czyszczenie kostki</a></li>
+          <li><a href="uslugi.html">Piaskowanie</a></li>
+          <li><a href="uslugi.html">Impregnacja</a></li>
+          <li><a href="uslugi.html">Mycie elewacji</a></li>
+          <li><a href="uslugi.html">Panele i ogrodzenia</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Szybkie linki</h4>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="uslugi.html">Usługi</a></li>
+          <li><a href="index.html#realizacje">Realizacje</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+48530693161">530 693 161</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kontakt@bruker.pl">kontakt@bruker.pl</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Bielsko-Biała i okolice</li>
+          <li><i class="fa-solid fa-clock"></i> Codziennie 7:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2026 BRUKER. Wszelkie prawa zastrzeżone.</span>
+        <span>Bielsko-Biała · Cieszyn · Ustroń · Trójwieś · Biała</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

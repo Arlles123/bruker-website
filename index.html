@@ -3,440 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRUKER — Profesjonalne Czyszczenie Kostki Brukowej</title>
-  <meta name="description" content="BRUKER — profesjonalne czyszczenie kostki brukowej, impregnacja, mycie elewacji i dachów. Darmowa wycena. Zadzwoń: +48 000 000 000">
+  <title>BRUKER — Profesjonalne Czyszczenie Kostki Brukowej | Bielsko-Biała</title>
+  <meta name="description" content="BRUKER — profesjonalne czyszczenie kostki brukowej, impregnacja, mycie elewacji. Bielsko-Biała i okolice. Zadzwoń: 530 693 161. Czynni 7:00–18:00.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav class="navbar" id="navbar">
-  <div class="container navbar__inner">
-    <a href="#hero" class="navbar__logo">
-      <img src="assets/logo.jpg" alt="BRUKER logo" height="48">
-    </a>
-    <ul class="navbar__links" id="navLinks">
-      <li><a href="#uslugi">Usługi</a></li>
-      <li><a href="#realizacje">Realizacje</a></li>
-      <li><a href="#jak-dzialamy">Jak działamy</a></li>
-      <li><a href="#opinie">Opinie</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
-    <a href="#kontakt" class="btn btn-green navbar__cta">Darmowa wycena</a>
-    <button class="navbar__burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.jpg" alt="BRUKER logo" height="48">
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="active">Strona główna</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="tel:+48530693161" class="navbar__phone"><i class="fa-solid fa-phone"></i> 530 693 161</a>
+      <a href="kontakt.html" class="btn btn-green navbar__cta">Darmowa wycena</a>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
   <section class="hero" id="hero">
-  <div class="container hero__inner">
-    <div class="hero__content">
-      <span class="section-label hero__label">Profesjonalne czyszczenie kostki brukowej</span>
-      <h1 class="hero__title">Przywróć blask<br><span class="hero__title--accent">swojej posesji</span></h1>
-      <p class="hero__tagline">&bdquo;BRUKER myje, sąsiad z zazdrości gnije&rdquo;</p>
-      <p class="hero__desc">Czyszczenie ciśnieniowe, impregnacja, mycie elewacji i dachów. Profesjonalny sprzęt, szybka realizacja, gwarancja efektu.</p>
-      <div class="hero__cta">
-        <a href="#kontakt" class="btn btn-primary"><i class="fa-solid fa-file-invoice"></i> Darmowa wycena</a>
-        <a href="tel:+48000000000" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Zadzwoń teraz</a>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="section-label hero__label">Profesjonalne czyszczenie kostki brukowej</span>
+        <h1 class="hero__title">Przywróć blask<br><span class="hero__title--accent">swojej posesji</span></h1>
+        <p class="hero__tagline">&bdquo;BRUKER myje, sąsiad z zazdrości gnije&rdquo;</p>
+        <p class="hero__desc">Czyszczenie ciśnieniowe, piaskowanie, impregnacja i konserwacja kostki oraz elewacji. Bielsko-Biała i okolice — dojazd gratis.</p>
+        <div class="hero__cta">
+          <a href="kontakt.html" class="btn btn-primary"><i class="fa-solid fa-file-invoice"></i> Darmowa wycena</a>
+          <a href="tel:+48530693161" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Zadzwoń: 530 693 161</a>
+        </div>
+      </div>
+
+      <div class="hero__ba">
+        <div class="hero__ba-card hero__ba-card--before">
+          <div class="placeholder-img" style="height:220px;">
+            <i class="fa-regular fa-image"></i>
+            <span>PRZED</span>
+          </div>
+          <span class="hero__ba-label">Przed czyszczeniem</span>
+        </div>
+        <div class="hero__ba-card hero__ba-card--after">
+          <div class="placeholder-img" style="height:220px; background: linear-gradient(135deg,#ddf0f8,#e8f5d6);">
+            <i class="fa-solid fa-sparkles" style="color:var(--blue)"></i>
+            <span>PO</span>
+          </div>
+          <span class="hero__ba-label">Po czyszczeniu</span>
+        </div>
       </div>
     </div>
 
-    <div class="hero__ba">
-      <div class="hero__ba-card hero__ba-card--before">
-        <div class="placeholder-img" style="height:220px;">
-          <i class="fa-regular fa-image"></i>
-          <span>PRZED</span>
+    <div class="hero__stats">
+      <div class="container hero__stats-inner">
+        <div class="hero__stat">
+          <strong>500+</strong>
+          <span>zrealizowanych zleceń</span>
         </div>
-        <span class="hero__ba-label">Przed czyszczeniem</span>
-      </div>
-      <div class="hero__ba-card hero__ba-card--after">
-        <div class="placeholder-img" style="height:220px; background: linear-gradient(135deg,#ddf0f8,#e8f5d6);">
-          <i class="fa-solid fa-sparkles" style="color:var(--blue)"></i>
-          <span>PO</span>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong>⭐ 5.0</strong>
+          <span>średnia ocena klientów</span>
         </div>
-        <span class="hero__ba-label">Po czyszczeniu</span>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong>7–18</strong>
+          <span>czynni codziennie</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong>Gratis</strong>
+          <span>dojazd Bielsko +50 km</span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="hero__stats">
-    <div class="container hero__stats-inner">
-      <div class="hero__stat">
-        <strong>500+</strong>
-        <span>zrealizowanych zleceń</span>
+  <section class="how-we-work section" id="jak-dzialamy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Proces</span>
+        <h2 class="section-title">Prosta praca w 3 krokach</h2>
+        <p class="section-subtitle">Od pierwszego kontaktu do gotowego efektu — bez komplikacji.</p>
       </div>
-      <div class="hero__stat-divider"></div>
-      <div class="hero__stat">
-        <strong>⭐ 5.0</strong>
-        <span>średnia ocena klientów</span>
-      </div>
-      <div class="hero__stat-divider"></div>
-      <div class="hero__stat">
-        <strong>24h</strong>
-        <span>wycena bez wychodzenia z domu</span>
-      </div>
-      <div class="hero__stat-divider"></div>
-      <div class="hero__stat">
-        <strong>100%</strong>
-        <span>gwarancja satysfakcji</span>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="services section section--alt" id="uslugi">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Co robimy</span>
-      <h2 class="section-title">Nasze usługi</h2>
-      <p class="section-subtitle">Kompleksowe czyszczenie i zabezpieczenie powierzchni zewnętrznych — profesjonalnym sprzętem, z gwarancją efektu.</p>
-    </div>
-    <div class="services__grid">
-      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="service-card__icon"><i class="fa-solid fa-broom"></i></div>
-        <h3 class="service-card__title">Czyszczenie kostki brukowej</h3>
-        <p class="service-card__desc">Mycie ciśnieniowe usuwa mech, glony, tłuszcz i zabrudzenia. Kostka odzyska pierwotny wygląd.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
-        <div class="service-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3 class="service-card__title">Impregnacja kostki</h3>
-        <p class="service-card__desc">Zabezpieczamy powierzchnię środkami impregnującymi — ochrona przed zabrudzeniami, wodą i mrozem.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
-        <div class="service-card__icon"><i class="fa-solid fa-building"></i></div>
-        <h3 class="service-card__title">Mycie elewacji</h3>
-        <p class="service-card__desc">Usuwamy zanieczyszczenia, glony i zacieki z elewacji budynków. Bezpiecznie dla każdego rodzaju tynku.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
-        <div class="service-card__icon"><i class="fa-solid fa-house-chimney"></i></div>
-        <h3 class="service-card__title">Mycie dachów</h3>
-        <p class="service-card__desc">Czyszczenie dachówki, blachy i gontu — przedłużamy żywotność dachu i przywracamy estetyczny wygląd.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="320">
-        <div class="service-card__icon"><i class="fa-solid fa-border-all"></i></div>
-        <h3 class="service-card__title">Czyszczenie paneli i ogrodzeń</h3>
-        <p class="service-card__desc">Mycie ogrodzeń, paneli ogrodzeniowych, tarasów i podjazdów. Efekt widoczny od pierwszego zlecenia.</p>
+      <div class="steps steps--3">
+        <div class="step" data-aos="fade-up" data-aos-delay="0">
+          <div class="step__num">01</div>
+          <div class="step__connector"></div>
+          <div class="step__icon"><i class="fa-solid fa-phone"></i></div>
+          <h3 class="step__title">Kontakt</h3>
+          <p class="step__desc">Zadzwoń na <strong>530 693 161</strong> lub napisz. Jesteśmy dostępni codziennie 7:00–18:00. Wycena tego samego dnia.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="120">
+          <div class="step__num">02</div>
+          <div class="step__connector"></div>
+          <div class="step__icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+          <h3 class="step__title">Realizacja</h3>
+          <p class="step__desc">Przyjeżdżamy z profesjonalnym sprzętem. Czyścimy dokładnie i bez bałaganu na posesji. Dojazd w Bielsku i okolicach gratis.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="240">
+          <div class="step__num">03</div>
+          <div class="step__connector step__connector--last"></div>
+          <div class="step__icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3 class="step__title">Efekt</h3>
+          <p class="step__desc">Widzisz różnicę od razu. Gwarantujemy satysfakcję — jeśli nie jesteś zadowolony, wracamy i poprawiamy.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-  <section class="before-after section" id="realizacje">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Efekty pracy</span>
-      <h2 class="section-title">Przed i po</h2>
-      <p class="section-subtitle">Przeciągnij suwak aby zobaczyć różnicę. Wkrótce — prawdziwe zdjęcia realizacji.</p>
-    </div>
+  </section>
 
-    <div class="ba-slider" id="baSlider">
-      <div class="ba-before">
-        <div class="placeholder-img ba-placeholder" style="background: linear-gradient(135deg,#e8e8e0,#d4d4c8);">
-          <i class="fa-regular fa-image"></i>
-          <span>PRZED CZYSZCZENIEM</span>
-          <small>Tutaj pojawi się zdjęcie</small>
-        </div>
+  <section class="before-after section section--alt" id="realizacje">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Efekty pracy</span>
+        <h2 class="section-title">Przed i po</h2>
+        <p class="section-subtitle">Przeciągnij suwak aby zobaczyć różnicę. Wkrótce — prawdziwe zdjęcia realizacji.</p>
       </div>
-      <div class="ba-after">
-        <div class="placeholder-img ba-placeholder" style="background: linear-gradient(135deg,#ddf0f8,#e8f5d6);">
-          <i class="fa-solid fa-sparkles" style="color:var(--blue)"></i>
-          <span>PO CZYSZCZENIU</span>
-          <small>Tutaj pojawi się zdjęcie</small>
-        </div>
-      </div>
-      <div class="ba-handle" id="baHandle">
-        <div class="ba-handle-bar"></div>
-        <div class="ba-handle-circle"><i class="fa-solid fa-arrows-left-right"></i></div>
-        <div class="ba-handle-bar"></div>
-      </div>
-    </div>
 
-    <h3 class="ba-gallery-title">Galeria realizacji</h3>
-    <div class="ba-gallery">
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+      <div class="ba-slider" id="baSlider">
+        <div class="ba-before">
+          <div class="placeholder-img ba-placeholder" style="background: linear-gradient(135deg,#e8e8e0,#d4d4c8);">
+            <i class="fa-regular fa-image"></i>
+            <span>PRZED CZYSZCZENIEM</span>
+            <small>Tutaj pojawi się zdjęcie</small>
+          </div>
         </div>
-        <p class="ba-gallery-label">Czyszczenie kostki</p>
+        <div class="ba-after">
+          <div class="placeholder-img ba-placeholder" style="background: linear-gradient(135deg,#ddf0f8,#e8f5d6);">
+            <i class="fa-solid fa-sparkles" style="color:var(--blue)"></i>
+            <span>PO CZYSZCZENIU</span>
+            <small>Tutaj pojawi się zdjęcie</small>
+          </div>
+        </div>
+        <div class="ba-handle" id="baHandle">
+          <div class="ba-handle-bar"></div>
+          <div class="ba-handle-circle"><i class="fa-solid fa-arrows-left-right"></i></div>
+          <div class="ba-handle-bar"></div>
+        </div>
       </div>
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="80">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+
+      <h3 class="ba-gallery-title">Galeria realizacji</h3>
+      <div class="ba-gallery">
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Czyszczenie kostki</p>
         </div>
-        <p class="ba-gallery-label">Impregnacja podjazdu</p>
-      </div>
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="160">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Impregnacja podjazdu</p>
         </div>
-        <p class="ba-gallery-label">Mycie elewacji</p>
-      </div>
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="240">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Mycie elewacji</p>
         </div>
-        <p class="ba-gallery-label">Czyszczenie dachu</p>
-      </div>
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="320">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Piaskowanie kostki</p>
         </div>
-        <p class="ba-gallery-label">Panel ogrodzeniowy</p>
-      </div>
-      <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="ba-gallery-pair">
-          <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
-          <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Panel ogrodzeniowy</p>
         </div>
-        <p class="ba-gallery-label">Taras drewniany</p>
+        <div class="ba-gallery-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="ba-gallery-pair">
+            <div class="placeholder-img ba-gallery-img"><i class="fa-regular fa-image"></i><span>PRZED</span></div>
+            <div class="placeholder-img ba-gallery-img" style="background:linear-gradient(135deg,#ddf0f8,#e8f5d6)"><i class="fa-solid fa-sparkles"></i><span>PO</span></div>
+          </div>
+          <p class="ba-gallery-label">Konserwacja nawierzchni</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-  <section class="how-we-work section section--alt" id="jak-dzialamy">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Proces</span>
-      <h2 class="section-title">Jak działamy</h2>
-      <p class="section-subtitle">Prosta, 4-krokowa droga od zapytania do efektu — bez zbędnych formalności.</p>
-    </div>
-    <div class="steps">
-      <div class="step" data-aos="fade-up" data-aos-delay="0">
-        <div class="step__num">01</div>
-        <div class="step__connector"></div>
-        <div class="step__icon"><i class="fa-solid fa-phone"></i></div>
-        <h3 class="step__title">Kontakt i wycena</h3>
-        <p class="step__desc">Zadzwoń lub wypełnij formularz. Bezpłatna wycena w ciągu 24 godzin — bez wychodzenia z domu.</p>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="100">
-        <div class="step__num">02</div>
-        <div class="step__connector"></div>
-        <div class="step__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-        <h3 class="step__title">Oględziny</h3>
-        <p class="step__desc">Przyjeżdżamy na miejsce, oceniamy powierzchnię i dobieramy optymalną metodę czyszczenia.</p>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="200">
-        <div class="step__num">03</div>
-        <div class="step__connector"></div>
-        <div class="step__icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-        <h3 class="step__title">Realizacja</h3>
-        <p class="step__desc">Pracujemy profesjonalnym sprzętem ciśnieniowym. Dokładnie, szybko i bez bałaganu na posesji.</p>
-      </div>
-      <div class="step" data-aos="fade-up" data-aos-delay="300">
-        <div class="step__num">04</div>
-        <div class="step__connector step__connector--last"></div>
-        <div class="step__icon"><i class="fa-solid fa-circle-check"></i></div>
-        <h3 class="step__title">Efekt i gwarancja</h3>
-        <p class="step__desc">Odbierasz gotową pracę. Gwarantujemy satysfakcję — jeśli nie jesteś zadowolony, wracamy.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+
   <section class="testimonials section" id="opinie">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Opinie</span>
-      <h2 class="section-title">Co mówią klienci</h2>
-      <p class="section-subtitle">Ponad 500 zrealizowanych zleceń — sprawdź co o nas mówią.</p>
-    </div>
-    <div class="testimonials__grid">
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
-        <p class="testimonial-card__text">&bdquo;Kostka po czyszczeniu wygląda jak nowa! Przyjechali punktualnie, pracowali sprawnie i posprzątali po sobie. Gorąco polecam.&rdquo;</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">A.K.</div>
-          <div>
-            <strong>Anna K.</strong>
-            <span>Warszawa</span>
-          </div>
-        </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Opinie</span>
+        <h2 class="section-title">Co mówią klienci</h2>
+        <p class="section-subtitle">Wkrótce prawdziwe opinie z prawdziwymi zdjęciami efektów.</p>
       </div>
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
-        <p class="testimonial-card__text">&bdquo;Zlecałem mycie elewacji i podjazdu — efekt przeszedł moje oczekiwania. Cena uczciwa, realizacja szybka. Zdecydowanie wrócę.&rdquo;</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">M.W.</div>
-          <div>
-            <strong>Marek W.</strong>
-            <span>Kraków</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
-        <p class="testimonial-card__text">&bdquo;Dach był czarny od mchu, teraz wygląda jak świeżo położony. Profesjonalne podejście od wyceny do odbioru. Polecam z czystym sumieniem.&rdquo;</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">K.N.</div>
-          <div>
-            <strong>Katarzyna N.</strong>
-            <span>Wrocław</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="faq section section--alt" id="faq">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">FAQ</span>
-      <h2 class="section-title">Często zadawane pytania</h2>
-      <p class="section-subtitle">Nie znajdziesz odpowiedzi? Zadzwoń — chętnie pomożemy.</p>
-    </div>
-    <div class="faq__list" id="faqList">
-      <div class="faq-item">
-        <button class="faq-item__q">Ile kosztuje czyszczenie kostki brukowej? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Cena zależy od powierzchni, stopnia zabrudzenia i rodzaju kostki. Standardowe czyszczenie podjazdu (ok. 50 m²) to koszt od 300 do 600 zł. Bezpłatna wycena w 24h — bez wychodzenia z domu.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-item__q">Jak długo trwa realizacja? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Standardowy podjazd lub taras (do 80 m²) myjemy w ciągu jednego dnia. Większe powierzchnie lub kompleksowe zlecenia (elewacja + kostka + dach) realizujemy w 2-3 dni.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-item__q">Czy impregnacja jest konieczna po czyszczeniu? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Impregnacja nie jest obowiązkowa, ale zdecydowanie przedłuża efekt czyszczenia. Zabezpiecza kostkę przed ponownym zabrudzeniem, mchem i wodą. Zalecamy ją szczególnie na świeżo czyszczonej nawierzchni.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-item__q">Jakim sprzętem pracujecie? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Używamy profesjonalnych myjek ciśnieniowych klasy przemysłowej (Kärcher, Nilfisk) o ciśnieniu do 250 barów. Dobieramy dysznię i ciśnienie do rodzaju powierzchni — żeby wyczyścić bez uszkodzeń.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-item__q">Czy pracujecie podczas deszczu lub mrozu? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Lekki deszcz nie przeszkadza w czyszczeniu. Nie pracujemy przy temperaturach poniżej 5°C, ponieważ środki impregnujące wymagają minimalnej temperatury do prawidłowego wniknięcia. Sezon: kwiecień–październik.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-item__q">Na jaki obszar Polski dojeżdżacie? <i class="fa-solid fa-chevron-down"></i></button>
-        <div class="faq-item__a"><p>Działamy na terenie całej Polski. Koszt dojazdu poza obszar 50 km od siedziby ustalamy indywidualnie. Skontaktuj się z nami — na pewno coś wspólnie ustalimy.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="contact section" id="kontakt">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">Kontakt</span>
-      <h2 class="section-title">Skontaktuj się z nami</h2>
-      <p class="section-subtitle">Zadzwoń lub napisz — bezpłatna wycena w 24 godziny.</p>
-    </div>
-    <div class="contact__grid">
-      <div class="contact__form-wrap" data-aos="fade-right">
-        <form class="contact__form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Imię i nazwisko</label>
-            <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Numer telefonu</label>
-            <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Wiadomość</label>
-            <textarea id="message" name="message" rows="5" placeholder="Opisz co chcesz wyczyścić, podaj orientacyjną powierzchnię…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary contact__submit">
-            <i class="fa-solid fa-paper-plane"></i> Wyślij zapytanie
-          </button>
-          <p class="contact__success" id="formSuccess">✅ Dziękujemy! Odezwiemy się w ciągu 24h.</p>
-        </form>
-      </div>
-      <div class="contact__info" data-aos="fade-left">
-        <div class="contact__info-card">
-          <div class="contact__info-item">
-            <div class="contact__info-icon"><i class="fa-solid fa-phone"></i></div>
-            <div>
-              <span class="contact__info-label">Telefon</span>
-              <a href="tel:+48000000000" class="contact__info-value">+48 000 000 000</a>
-            </div>
-          </div>
-          <div class="contact__info-item">
-            <div class="contact__info-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <span class="contact__info-label">E-mail</span>
-              <a href="mailto:kontakt@bruker.pl" class="contact__info-value">kontakt@bruker.pl</a>
-            </div>
-          </div>
-          <div class="contact__info-item">
-            <div class="contact__info-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <span class="contact__info-label">Obszar działania</span>
-              <span class="contact__info-value">Cała Polska</span>
-            </div>
-          </div>
-          <div class="contact__info-item">
-            <div class="contact__info-icon"><i class="fa-solid fa-clock"></i></div>
-            <div>
-              <span class="contact__info-label">Godziny kontaktu</span>
-              <span class="contact__info-value">Pon–Sob, 7:00–19:00</span>
+      <div class="testimonials__grid">
+        <div class="testimonial-card testimonial-card--photo" data-aos="fade-up" data-aos-delay="0">
+          <div class="testimonial-card__bg" style="background: linear-gradient(135deg,#c8e6a0 0%,#a8d8f0 100%);"></div>
+          <div class="testimonial-card__overlay"></div>
+          <div class="testimonial-card__content">
+            <div class="testimonial-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Zdjęcie efektu</span>
+              <small>+ opinia klienta — wkrótce</small>
             </div>
           </div>
         </div>
-        <div class="contact__map-placeholder placeholder-img" style="height:200px; margin-top:20px;">
-          <i class="fa-solid fa-map-location-dot" style="font-size:36px; color:var(--blue)"></i>
-          <span>Mapa — wkrótce</span>
-          <small>Google Maps embed</small>
+        <div class="testimonial-card testimonial-card--photo" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card__bg" style="background: linear-gradient(135deg,#ddf0f8 0%,#c8e6a0 100%);"></div>
+          <div class="testimonial-card__overlay"></div>
+          <div class="testimonial-card__content">
+            <div class="testimonial-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Zdjęcie efektu</span>
+              <small>+ opinia klienta — wkrótce</small>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--photo" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card__bg" style="background: linear-gradient(135deg,#a8d8f0 0%,#ddf0f8 100%);"></div>
+          <div class="testimonial-card__overlay"></div>
+          <div class="testimonial-card__content">
+            <div class="testimonial-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Zdjęcie efektu</span>
+              <small>+ opinia klienta — wkrótce</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-  <footer class="footer">
-  <div class="container footer__top">
-    <div class="footer__brand">
-      <img src="assets/logo.jpg" alt="BRUKER" class="footer__logo">
-      <p class="footer__tagline">„BRUKER myje, sąsiad z zazdrości gnije"</p>
-      <div class="footer__socials">
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-    </div>
-    <div class="footer__col">
-      <h4>Usługi</h4>
-      <ul>
-        <li><a href="#uslugi">Czyszczenie kostki</a></li>
-        <li><a href="#uslugi">Impregnacja</a></li>
-        <li><a href="#uslugi">Mycie elewacji</a></li>
-        <li><a href="#uslugi">Mycie dachów</a></li>
-        <li><a href="#uslugi">Panele i ogrodzenia</a></li>
-      </ul>
-    </div>
-    <div class="footer__col">
-      <h4>Szybkie linki</h4>
-      <ul>
-        <li><a href="#hero">Strona główna</a></li>
-        <li><a href="#realizacje">Realizacje</a></li>
-        <li><a href="#jak-dzialamy">Jak działamy</a></li>
-        <li><a href="#opinie">Opinie</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer__col">
-      <h4>Kontakt</h4>
-      <ul>
-        <li><i class="fa-solid fa-phone"></i> <a href="tel:+48000000000">+48 000 000 000</a></li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kontakt@bruker.pl">kontakt@bruker.pl</a></li>
-        <li><i class="fa-solid fa-location-dot"></i> Cała Polska</li>
-        <li><i class="fa-solid fa-clock"></i> Pon–Sob 7:00–19:00</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="container footer__bottom-inner">
-      <span>© 2026 BRUKER. Wszelkie prawa zastrzeżone.</span>
-      <span>Profesjonalne czyszczenie kostki brukowej — Polska</span>
-    </div>
-  </div>
-</footer>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo.jpg" alt="BRUKER" class="footer__logo">
+        <p class="footer__tagline">„BRUKER myje, sąsiad z zazdrości gnije"</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Usługi</h4>
+        <ul>
+          <li><a href="uslugi.html">Czyszczenie kostki</a></li>
+          <li><a href="uslugi.html">Piaskowanie</a></li>
+          <li><a href="uslugi.html">Impregnacja</a></li>
+          <li><a href="uslugi.html">Mycie elewacji</a></li>
+          <li><a href="uslugi.html">Panele i ogrodzenia</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Szybkie linki</h4>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="uslugi.html">Usługi</a></li>
+          <li><a href="index.html#realizacje">Realizacje</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+48530693161">530 693 161</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kontakt@bruker.pl">kontakt@bruker.pl</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Bielsko-Biała i okolice</li>
+          <li><i class="fa-solid fa-clock"></i> Codziennie 7:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2026 BRUKER. Wszelkie prawa zastrzeżone.</span>
+        <span>Bielsko-Biała · Cieszyn · Ustroń · Trójwieś · Biała</span>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>

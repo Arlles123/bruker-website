@@ -60,18 +60,28 @@ document.querySelectorAll('.faq-item__q').forEach(btn => {
 // ===== GSAP ANIMATIONS =====
 gsap.registerPlugin(ScrollTrigger);
 
-const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-heroTl
-  .from('.hero__label',   { y: 20, opacity: 0, duration: 0.6 })
-  .from('.hero__title',   { y: 30, opacity: 0, duration: 0.7 }, '-=0.3')
-  .from('.hero__tagline', { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
-  .from('.hero__desc',    { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
-  .from('.hero__cta',     { y: 20, opacity: 0, duration: 0.6 }, '-=0.3')
-  .from('.hero__ba',      { x: 40, opacity: 0, duration: 0.8 }, '-=0.6')
-  .from('.hero__stat',    { y: 10, opacity: 0, stagger: 0.1, duration: 0.5 }, '-=0.4');
-
+// Navbar slide-down (all pages)
 gsap.from('.navbar', { y: -80, opacity: 0, duration: 0.7, ease: 'power3.out', delay: 0.1 });
 
+// Hero timeline (index.html only — elements absent on other pages are skipped)
+if (document.querySelector('.hero__label')) {
+  const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  heroTl
+    .from('.hero__label',   { y: 20, opacity: 0, duration: 0.6 })
+    .from('.hero__title',   { y: 30, opacity: 0, duration: 0.7 }, '-=0.3')
+    .from('.hero__tagline', { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
+    .from('.hero__desc',    { y: 20, opacity: 0, duration: 0.6 }, '-=0.4')
+    .from('.hero__cta',     { y: 20, opacity: 0, duration: 0.6 }, '-=0.3')
+    .from('.hero__ba',      { x: 40, opacity: 0, duration: 0.8 }, '-=0.6')
+    .from('.hero__stat',    { y: 10, opacity: 0, stagger: 0.1, duration: 0.5 }, '-=0.4');
+}
+
+// Page hero animation (subpages)
+if (document.querySelector('.page-hero')) {
+  gsap.from('.page-hero', { y: 20, opacity: 0, duration: 0.7, ease: 'power3.out', delay: 0.2 });
+}
+
+// Button hover scale
 document.querySelectorAll('.btn').forEach(btn => {
   btn.addEventListener('mouseenter', () => gsap.to(btn, { scale: 1.03, duration: 0.2 }));
   btn.addEventListener('mouseleave', () => gsap.to(btn, { scale: 1, duration: 0.2 }));
