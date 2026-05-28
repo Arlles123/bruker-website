@@ -77,6 +77,14 @@ document.querySelectorAll('.btn').forEach(btn => {
   btn.addEventListener('mouseleave', () => gsap.to(btn, { scale: 1, duration: 0.2 }));
 });
 
+// ===== AOS INIT =====
+AOS.init({
+  duration: 700,
+  easing: 'ease-out-cubic',
+  once: true,
+  offset: 60,
+});
+
 // ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
