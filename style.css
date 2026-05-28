@@ -150,7 +150,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
   gap: 32px;
 }
 .navbar__logo img {
-  height: 52px;
+  height: 48px;
   width: auto;
   object-fit: contain;
 }
@@ -865,6 +865,13 @@ a.contact__info-value:hover { color: var(--blue); }
 @media (max-width: 560px) {
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom-inner { flex-direction: column; text-align: center; }
+}
+
+/* ===== RESPONSIVE — 1200px ===== */
+@media (max-width: 1200px) {
+  .container { padding: 0 20px; }
+  .services__grid { gap: 20px; }
+  .hero__inner { gap: 40px; }
 }
 
 /* ===== RESPONSIVE — FINAL PASS ===== */
