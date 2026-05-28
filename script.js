@@ -56,3 +56,15 @@ document.querySelectorAll('.faq-item__q').forEach(btn => {
     if (!isOpen) item.classList.add('open');
   });
 });
+
+// ===== CONTACT FORM =====
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const success = document.getElementById('formSuccess');
+    success.classList.add('visible');
+    contactForm.reset();
+    setTimeout(() => success.classList.remove('visible'), 5000);
+  });
+}
