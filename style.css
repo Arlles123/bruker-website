@@ -866,3 +866,32 @@ a.contact__info-value:hover { color: var(--blue); }
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom-inner { flex-direction: column; text-align: center; }
 }
+
+/* ===== RESPONSIVE — FINAL PASS ===== */
+@media (max-width: 768px) {
+  :root { --section-pad: 64px 0; }
+
+  .section-title { font-size: clamp(24px, 6vw, 32px); }
+  .section-subtitle { font-size: 15px; }
+
+  .hero { padding: 40px 0 0; min-height: auto; }
+  .hero__title { font-size: clamp(30px, 8vw, 44px); }
+  .hero__desc { font-size: 15px; }
+  .btn { padding: 12px 22px; font-size: 14px; }
+
+  .step__connector { display: none; }
+  .ba-slider { height: 240px; }
+
+  .contact__form-wrap { padding: 28px 20px; }
+
+  .footer__top { gap: 32px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero__cta { flex-direction: column; }
+  .hero__cta .btn { width: 100%; justify-content: center; }
+  .hero__ba { grid-template-columns: 1fr; }
+  .hero__stat { padding: 10px 16px; }
+  .navbar__logo img { height: 40px; }
+}
