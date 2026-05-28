@@ -14,7 +14,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar" id="navbar"></nav>
+  <nav class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#hero" class="navbar__logo">
+      <img src="assets/logo.jpg" alt="BRUKER logo" height="52">
+    </a>
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="#uslugi">Usługi</a></li>
+      <li><a href="#realizacje">Realizacje</a></li>
+      <li><a href="#jak-dzialamy">Jak działamy</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="btn btn-green navbar__cta">Darmowa wycena</a>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
   <section class="hero" id="hero"></section>
   <section class="services section" id="uslugi"></section>
   <section class="before-after section" id="realizacje"></section>
