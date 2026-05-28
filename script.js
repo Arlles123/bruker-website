@@ -40,7 +40,7 @@ function initBASlider() {
 
   slider.addEventListener('touchstart', e => { dragging = true; setPosition(e.touches[0].clientX); });
   document.addEventListener('touchend', () => { dragging = false; });
-  document.addEventListener('touchmove', e => { if (dragging) setPosition(e.touches[0].clientX); });
+  document.addEventListener('touchmove', e => { if (dragging) { e.preventDefault(); setPosition(e.touches[0].clientX); } }, { passive: false });
 
   setPosition(slider.getBoundingClientRect().left + slider.offsetWidth * 0.5);
 }

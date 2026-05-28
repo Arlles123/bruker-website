@@ -89,7 +89,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
 }
-.btn:hover { transform: translateY(-2px); }
+.btn:hover { }
 .btn-primary {
   background: var(--navy);
   color: #fff;
@@ -673,7 +673,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
-.faq-item.open .faq-item__a { max-height: 200px; }
+.faq-item.open .faq-item__a { max-height: 500px; }
 .faq-item__a p {
   padding: 0 24px 20px;
   color: var(--text-secondary);
